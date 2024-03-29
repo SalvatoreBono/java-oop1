@@ -25,4 +25,13 @@ public class Prodotto {
         return randomCode;
     }
 
+    public String getCodeAndName(){
+        String strCode = Integer.toString(codice);
+        if (strCode.length() < 8 ){
+            for (int i = 0; i < strCode.length() ; i++) {
+            return  "0" + codice +"-"+nome;
+            }
+        }
+        return codice + "-"+ nome;
+    }
 }
