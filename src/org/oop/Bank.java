@@ -29,7 +29,7 @@ public class Bank {
             } else if (bankOption == 2) {
                 System.out.println("Quanto vuoi prelevare?");
                 int money = keyboard.nextInt();
-                //se il tuo saldo è inferiore ai solddi da prelevare
+                //se il tuo saldo è inferiore ai soldi da prelevare
                 if (conto1.saldo < money){
                     System.out.println("Mi dispiace non puoi prelevare perchè il tuo conto andrà in negativo");
                 } else {

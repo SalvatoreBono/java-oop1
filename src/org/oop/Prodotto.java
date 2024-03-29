@@ -26,12 +26,8 @@ public class Prodotto {
     }
 
     public String getCodeAndName(){
-        String strCode = Integer.toString(codice);
-        if (strCode.length() < 8 ){
-            for (int i = 0; i < strCode.length() ; i++) {
-            return  "0" + codice +"-"+nome;
-            }
-        }
-        return codice + "-"+ nome;
+        // Stringa formattata in modo da avere zeri a sinistra fino a raggiungere una lunghezza di 8 caratteri.
+        String formattedCode = String.format("%08d", codice);
+        return formattedCode + "-"+ nome;
     }
 }
