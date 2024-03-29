@@ -6,12 +6,13 @@ public class Main {
     System.out.println("Il codice del tuo prodotto è: "+prodotto1.codice);
     System.out.println("Prezzo senza iva: "+ String.format("%.2f",prodotto1.prezzo)+"€");
     System.out.println("Prezzo con iva: "+String.format("%.2f",prodotto1.getPriceWithIva() )+"€");
-    System.out.println(prodotto1.getCodeAndName());
 
     Prodotto prodotto2 = new Prodotto("Power Bank", "Tascabile",20);
-    System.out.println("Il codice del tuo prodotto è: "+prodotto2.getCode());
+    System.out.println("Il codice del tuo prodotto è: "+prodotto2.codice);
+    System.out.println("Il codice del tuo prodotto è: "+prodotto2.codice);
     System.out.println("Prezzo senza iva: "+ String.format("%.2f",prodotto2.prezzo)+"€");
     System.out.println("Prezzo con iva: "+String.format("%.2f",prodotto2.getPriceWithIva() )+"€");
-    System.out.println(prodotto2.getCodeAndName());
+    //System.out.println(prodotto2.getCodeAndName());
     }
+
 }
